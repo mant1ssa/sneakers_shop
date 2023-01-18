@@ -17,17 +17,70 @@ function App() {
                       <span>1205 руб.</span>
                   </li>
                   <li>
-                      <img width={18} height={18} src='/img/user.svg'/>
+                      <img width={18} height={18} src='/img/pref.svg'/>
                       <p></p>
                   </li>
               </ul>
           </header>
 
           <div className="content">
-              <h1 className="mb-40">Все кроссовки</h1>
+
+              <div className="overlay">
+                  <div className="drawer">
+                      <h2>Корзина</h2>
+
+                      <div className="items">
+                          <div className="cartItem d-flex align-center mb-20">
+                              <img className="mr-20" width={70} height={70} src="/img/sneakers/1.jpg" alt="sneakers"/>
+                              <div className="info mr-20">
+                                  <p>Мужские Кроссовки Nike Air Max 270</p>
+                                  <b>12 999 руб.</b>
+                              </div>
+                              <button className="button cu-p">
+                                  <img width={11} height={11} src="/img/btn-remove.svg" alt="plus"/>
+                              </button>
+                          </div>
+
+                          <div className="cartItem d-flex align-center mb-20">
+                              <img className="mr-20" width={70} height={70} src="/img/sneakers/2.jpg" alt="sneakers"/>
+                              <div className="info mr-20">
+                                  <p>Мужские Кроссовки Nike Air Max 270</p>
+                                  <b>8 499 руб.</b>
+                              </div>
+                              <button className="button cu-p">
+                                  <img width={11} height={11} src="/img/btn-remove.svg" alt="plus"/>
+                              </button>
+                          </div>
+                      </div>
+
+                      <ul className="cartTotalBlock">
+                          <li className="d-flex mb-20">
+                              <span>Итого: </span>
+                              <div></div>
+                              <b>21 498 руб. </b>
+                          </li>
+                          <li className="d-flex">
+                              <span>Налог 5%: </span>
+                              <div></div>
+                              <b>1074 руб. </b>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div className="d-flex align-center mb-40 justify-between">
+                  <h1 className="">Все кроссовки</h1>
+                  <div className="search-block d-flex">
+                      <img src="/img/search.svg" alt="search"/>
+                      <input type="text" placeholder="Поиск..."/>
+                  </div>
+              </div>
 
               <div className="d-flex">
                   <div className="card">
+                      <div className="favorite cu-p">
+                          <img src="/img/heart-unliked.svg" alt="unliked"/>
+                      </div>
                       <img width={133} height={112} src="/img/sneakers/1.jpg" alt="sneakers1"/>
                       <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
 
