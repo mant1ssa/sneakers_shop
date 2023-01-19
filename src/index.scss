@@ -123,11 +123,14 @@ code {
   background: #FFFFFF;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
 
-  display: flex;
+  //display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   h2{
     margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -162,5 +165,38 @@ code {
     border-bottom: 1px dashed #DFDFDF;
     position: relative;
     top: -3px;
+  }
+
+  .greenBtn{
+    position: relative;
+    img{
+      right: 30px;
+      top: 22px;
+      position: absolute;
+      transition: transform .2s ease-in-out;
+    }
+  }
+}
+.greenBtn{
+  width: 100%;
+  min-height: 55px;
+  background: #9DD558;
+  border: 0;
+  border-radius: 18px;
+
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  transition: background-color .1s ease-in-out;
+
+  &:hover{
+    background-color: #adde70;
+    img{
+      transform: translateX(5px);
+    }
+  }
+  &:active{
+    background-color: #a8de66;
   }
 }
