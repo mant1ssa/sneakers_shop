@@ -5,7 +5,7 @@ const Drawer = () => {
         <div style={{display: 'none'}} className="overlay">
             <div className="drawer d-flex">
                 <div className="drawerTop">
-                    <h2 className="mb-30">Корзина                               <button className="button cu-p">
+                    <h2 className="mb-30">Корзина <button className="button cu-p">
                         <img width={11} height={11} src="/img/btn-remove.svg" alt="plus"/>
                     </button></h2>
 
