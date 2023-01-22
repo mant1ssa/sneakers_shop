@@ -75,6 +75,8 @@ code {
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
@@ -88,6 +90,8 @@ code {
   height: 100%;
   padding: 30px;
 
+  overflow: scroll;
+
   background: #FFFFFF;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
 
@@ -99,6 +103,9 @@ code {
     margin: 0;
     display: flex;
     justify-content: space-between;
+  }
+  .items{
+    //overflow: scroll;
   }
 }
 
